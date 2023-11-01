@@ -5,6 +5,10 @@
     margin: 0;
     box-sizing: border-box;
 }
+.form_container {
+    width: 30%;
+    height: auto;
+}
 body {
     background-color: #080710;
 }
@@ -112,4 +116,15 @@ button {
 }
 .social i {
     margin-right: 4px;
+}
+.form_title {
+    text-align: center;
+}
+#textareaInput {
+    width: -webkit-fill-available;
+    background-color: rgba(255, 255, 255, 0.07);
+}
+#nameInput {
+    background-color: rgba(255, 255, 255, 0.07);
+    color: white;
 }
