@@ -14,8 +14,9 @@ return new class extends Migration
         Schema::create('employee', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->integer('total_leaving_day');
-            $table->string('manager_id');
+            $table->integer('total_leaving_day')->default(12);
+            $table->string('role')->default('employee');
+            $table->string('manager_id')->nullable();
         });
 
         Schema::create('request_form', function (Blueprint $table) {
@@ -24,7 +25,7 @@ return new class extends Migration
             $table->dateTime('start_date');
             $table->dateTime('end_date');
             $table->string('status');
-            $table->text('reason');
+            $table->text('reason')->nullable();
         });
     }
 
